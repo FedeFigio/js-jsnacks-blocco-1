@@ -1,11 +1,15 @@
-var numeroMaggioreEl = document.getElementById("numeroMaggiore")
+var output = document.getElementById("output")
 
-var num1 = prompt("numero1")
-var num2 = prompt("numero2")
+var somma = 0;
+var media = 0;
 
+for (let i = 0; i <= 10; i++) {
+    somma = somma + i
+    media = somma / i
 
-if (num1 > num2) {
-    numeroMaggioreEl.innerHTML = num1
-} else {
-    numeroMaggioreEl.innerHTML = num2
 }
+console.log(somma);
+console.log(media);
+
+output.innerHTML += "la somma dei primi 10 numeri e " + somma + "<br>"
+output.innerHTML += "la media dei primi 10 numeri e " + media + "<br>"
