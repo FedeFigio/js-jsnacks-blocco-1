@@ -1,11 +1,16 @@
-var numeroMaggioreEl = document.getElementById("numeroMaggiore")
-
-var num1 = prompt("numero1")
-var num2 = prompt("numero2")
+var output = document.getElementById("output")
 
 
-if (num1 > num2) {
-    numeroMaggioreEl.innerHTML = num1
-} else {
-    numeroMaggioreEl.innerHTML = num2
+var flag = true;
+
+for (let i = 0; flag; i++) {
+
+    var potenzaDue = Math.pow(i, 2)
+
+    if (potenzaDue >= 1000) {
+        flag = false;
+    }
+
+
+    output.innerHTML += i + " " + potenzaDue + "<br>"
 }
